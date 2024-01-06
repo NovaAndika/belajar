@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+body{
+    background-color: rgb(195, 154, 154);
+}
+a {
+    text-decoration: none;
+    display: flex;
+}
+
+
+.halaman{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.conten-prestasi{
+    width: 60%;
+    height: 20%;
+
+}
+.jurusan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%; 
+    
+}
+.content-jurusan{
+    width: 50%;
+    
+}
+
+.content-card{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    border: 1px solid black;
+    overflow-y: auto;
+    background-color: aquamarine;
+}
+.content-card::-webkit-scrollbar{
+    display: none;
+}
+.karir-smk2bjb{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.karir-scroll{
+    overflow-y: scroll;
+    border: 1px solid red;
+    background-color: aqua;
+}
+/* mobile */
+
+@media (max-width: 768px) {
+    .content1,
+    .content3 {
+      display: none;
+    }
+
+    .content2 {
+        width: 100%;
+    }
+    .daftar{
+        width: 100%;
+    }
+    .content2 img{
+        width: 100vw;
+        padding: 20px;
+
+    }
+  }
+  
