@@ -1,0 +1,4 @@
+[submodule "belajar"]
+	path = belajar
+	url = git@github.com:NovaAndika/belajar.git
+	branch = main
