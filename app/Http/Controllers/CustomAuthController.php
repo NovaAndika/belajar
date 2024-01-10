@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Redirect;
 
+
 class CustomAuthController extends Controller
 {
     public function index()
@@ -77,9 +78,12 @@ class CustomAuthController extends Controller
     
 
     public function signOut() {
-        Session::flush();
+        // Session::regenerate();
+
         Auth::logout();
-  
+
+
+
         return Redirect('login');
     }
 }
